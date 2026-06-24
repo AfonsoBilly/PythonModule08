@@ -1,0 +1,10 @@
+# pip dependency list for the Loading Programs analysis tool.
+# Install with:  pip install -r requirements.txt
+#
+# Versions are given as lower bounds: pip installs the newest matching
+# release. Unlike Poetry, pip does not write a lock file, so exact
+# resolved versions are not recorded here.
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+requests>=2.31

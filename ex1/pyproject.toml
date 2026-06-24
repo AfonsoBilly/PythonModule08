@@ -1,0 +1,27 @@
+# Poetry dependency configuration for the Loading Programs tool.
+#
+# Install with:   poetry install
+# Run with:       poetry run python loading.py
+#
+# Unlike requirements.txt, Poetry resolves the full dependency graph and
+# writes an exact, reproducible poetry.lock file. "package-mode = false"
+# tells Poetry this project only manages dependencies; it is not a
+# distributable package itself.
+
+[tool.poetry]
+name = "matrix-loading"
+version = "1.0.0"
+description = "Matrix data analysis tool: pip vs Poetry dependency management."
+authors = ["Zion Data Architect <architect@zion.io>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+numpy = ">=1.26"
+pandas = ">=2.1"
+matplotlib = ">=3.8"
+requests = ">=2.31"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
